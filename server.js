@@ -29,6 +29,6 @@ wss.on('connection', (ws) => {
 setInterval(() => {
   wss.clients.forEach((client) => {
     console.log('data: ', data);
-    client.send(data);
+    client.send(JSON.stringify(data));
   });
 }, 1000);
