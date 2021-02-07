@@ -7,6 +7,7 @@ Returns array of objects with randomly generated data
 <br>
 ````
 [
+.......,
 {
 id: 7,
 first_name: 'Cora Zboncak',
@@ -14,7 +15,8 @@ last_name: 'Erika Rosenbaum',
 email: 'Zander.Nicolas@hotmail.com',
 gender: 'Pop',
 ip_address: '173.124.216.150'
-}
+},
+......
 ]
 ````
 
