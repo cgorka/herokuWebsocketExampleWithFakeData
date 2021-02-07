@@ -3,7 +3,7 @@
 ### Generate samle user Json file every one second to all connected clients.
 
 
-Returns array of objects
+Returns array of objects with randomly generated data
 <br>
 ````
 [
