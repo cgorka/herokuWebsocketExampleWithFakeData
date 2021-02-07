@@ -1,6 +1,7 @@
-'use strict';
-const faker = require('faker');
+//Config
+const ARRAY_LENGTH=10;
 
+const faker = require('faker');
 function getItem(id) {
     return [
         {
@@ -8,7 +9,7 @@ function getItem(id) {
             "first_name": faker.name.findName(),
             "last_name": faker.name.findName(),
             "email": faker.internet.email(),
-            "gender": faker.music.genre(),
+            "genre": faker.music.genre(),
             "ip_address": faker.internet.ip()
         }
     ]
@@ -16,10 +17,11 @@ function getItem(id) {
 
 function getItems() {
     let items = [getItem(0)]
-    for (let i = 1; i < 12; i++) {
+    for (let i = 1; i < ARRAY_LENGTH; i++) {
         items = [...items, getItem(i)];
     }
-    return items
+    let json = JSON.stringify(JSON.parse(items),null,2);
+    return json
 }
 
 const express = require('express');
