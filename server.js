@@ -20,8 +20,7 @@ function getItems() {
     for (let i = 1; i < ARRAY_LENGTH; i++) {
         items = [...items, getItem(i)];
     }
-    let json = JSON.stringify(JSON.parse(items),null,2);
-    return json
+    return JSON.stringify(items,null,2);
 }
 
 const express = require('express');
@@ -43,6 +42,6 @@ wss.on('connection', (ws) => {
 
 setInterval(() => {
     wss.clients.forEach((client) => {
-        client.send(JSON.stringify(getItems()));
+        client.send(getItems());
     });
 }, 1000);
