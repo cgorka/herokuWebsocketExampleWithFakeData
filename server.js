@@ -1,5 +1,5 @@
 //Config
-const ARRAY_LENGTH=50;
+const ARRAY_LENGTH=150;
 
 const faker = require('faker');
 function getItem(id) {
@@ -10,7 +10,8 @@ function getItem(id) {
             "last_name": faker.name.findName(),
             "email": faker.internet.email(),
             "genre": faker.music.genre(),
-            "ip_address": faker.internet.ip()
+            "ip_address": faker.internet.ip(),
+            "mass":faker.finance.amount(0,100,4)
         }
     ]
 }
