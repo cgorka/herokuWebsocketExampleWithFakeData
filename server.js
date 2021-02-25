@@ -12,7 +12,8 @@ function getItem(id) {
             "email": faker.internet.email(),
             "genre": faker.commerce.productMaterial(),
             "ip_address": faker.internet.ip(),
-            "mass":faker.finance.amount(0,100,4)+" g"
+            "mass":faker.finance.amount(0,100,4)+" g",
+            "image":faker.image.food()
         }
     ]
 }
