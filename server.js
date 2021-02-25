@@ -44,4 +44,4 @@ setInterval(() => {
     wss.clients.forEach((client) => {
         client.send(getItems());
     });
-}, 1000);
+}, 2000);
