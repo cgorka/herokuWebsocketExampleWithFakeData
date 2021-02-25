@@ -1,5 +1,5 @@
 //Config
-const ARRAY_LENGTH=10;
+const ARRAY_LENGTH=50;
 
 const faker = require('faker');
 function getItem(id) {
