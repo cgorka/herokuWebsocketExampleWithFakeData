@@ -7,7 +7,7 @@ function getItem(id) {
     return [
         {
             "id": id,
-            "first_name": faker.name.firstName() +' '+faker.name.lastName,
+            "first_name": faker.name.firstName() +' '+faker.name.lastName(),
             "last_name": faker.name.findName(),
             "email": faker.internet.email(),
             "genre": faker.music.genre(),
