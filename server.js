@@ -10,7 +10,7 @@ function getItem(id) {
             "first_name": faker.name.firstName() +' '+faker.name.lastName(),
             "last_name": faker.name.findName(),
             "email": faker.internet.email(),
-            "genre": faker.music.genre(),
+            "genre": faker.lorem.word(),
             "ip_address": faker.internet.ip(),
             "mass":faker.finance.amount(0,100,4)+" g"
         }
