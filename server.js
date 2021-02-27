@@ -2,6 +2,9 @@
 const ARRAY_LENGTH=150;
 
 const faker = require('faker');
+function generateStatus(){
+    return 'green'
+}
 function getItem(id) {
     faker.locale = "pl";
     return [
@@ -14,6 +17,7 @@ function getItem(id) {
             "ip_address": faker.internet.ip(),
             "mass":faker.finance.amount(0,100,4)+" g",
             "image":faker.image.food()
+            "status":generateStatus()
         }
     ]
 }
