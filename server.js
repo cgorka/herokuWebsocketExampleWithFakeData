@@ -4,9 +4,9 @@ const ARRAY_LENGTH=150;
 const faker = require('faker');
 function generateStatus(){
     const n=Math.random()
-    if (n>0.5)
+    if (n>0.3)
         return 'green'
-    else if (n<0.25)
+    else if (n<0.15)
         return 'red'
     else
         return 'yellow'
@@ -23,7 +23,8 @@ function getItem(id) {
             "ip_address": faker.internet.ip(),
             "mass":faker.finance.amount(0,100,4)+" g",
             "image":faker.image.food(),
-            "status":generateStatus()
+            "status":generateStatus(),
+            "time":
         }
     ]
 }
