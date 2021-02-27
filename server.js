@@ -3,7 +3,13 @@ const ARRAY_LENGTH=150;
 
 const faker = require('faker');
 function generateStatus(){
-    return 'green'
+    const n=Math.random()
+    if (n>0.5)
+        return 'green'
+    else if (n<0.25)
+        return 'red'
+    else
+        return 'yellow'
 }
 function getItem(id) {
     faker.locale = "pl";
