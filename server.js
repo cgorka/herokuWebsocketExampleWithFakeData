@@ -23,8 +23,7 @@ function getItem(id) {
             "ip_address": faker.internet.ip(),
             "mass":faker.finance.amount(0,100,4)+" g",
             "image":faker.image.food(),
-            "status":generateStatus(),
-            "time":
+            "status":generateStatus()
         }
     ]
 }
