@@ -1,5 +1,5 @@
 //Config
-const ARRAY_LENGTH=150;
+const ARRAY_LENGTH=15;
 
 const faker = require('faker');
 function generateStatus(){
